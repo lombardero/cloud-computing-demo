@@ -1,1 +1,6 @@
-print ('Hello, this is indeed running in the Cloud!')
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello, this is indeed running in the Cloud!"
